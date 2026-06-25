@@ -92,8 +92,16 @@ const CartSection = ({
   const [s2sData, setS2sData] = useState(null)
 
   const [formData, setFormData] = useState({
-    firstName: '', lastName: '', email: '', phone: '',
-    address1: '', address2: '', city: '', state: '', zipcode: '', country: '',
+    firstName: 'Test User',
+    lastName: '',
+    email: 'testuser@example.com',
+    phone: '',
+    address1: '',
+    address2: '',
+    city: '',
+    state: '',
+    zipcode: '',
+    country: '',
   })
 
   const handleChange = (e) => {

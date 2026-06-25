@@ -476,7 +476,7 @@ export const CheckoutPopupModal: React.FC<CheckoutPopupModalProps> = ({
   const [isVisible, setIsVisible] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
+    name: 'Test User',
     phoneNumber: '',
   });
   
