@@ -40,6 +40,9 @@ function App() {
         {/* WA PlayTonight checkout flow */}
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/checkout/payu-redirect" element={<WAPayURedirectPage />} />
+        {/* Prefixed deploy paths: /int/checkout, /dom/checkout, /com/checkout */}
+        <Route path="/:prefix/checkout" element={<CheckoutPage />} />
+        <Route path="/:prefix/checkout/payu-redirect" element={<WAPayURedirectPage />} />
       </Routes>
     </Router>
   )

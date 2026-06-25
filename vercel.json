@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/payment/:path*",
+      "destination": "https://playtonight.fun/api/payment/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
