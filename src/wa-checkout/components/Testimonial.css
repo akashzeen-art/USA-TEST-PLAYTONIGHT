@@ -1,0 +1,134 @@
+/* =========================
+   TITLE & DESCRIPTION
+========================= */
+.sc_item_title {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.sc_item_descr {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   STAR RATING
+========================= */
+.star-rating {
+  position: relative;
+  display: inline-block;
+  margin: 4px auto 0;
+  font-size: 13px;
+  line-height: 1;
+  height: 1em;
+  text-align: center;
+}
+
+/* Empty stars */
+.star-rating::before {
+  content: "★★★★★";
+  color: #ddd;
+  display: block;
+}
+
+/* Filled stars wrapper */
+.star-rating .w_100per {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Filled stars */
+.star-rating .w_100per::before {
+  content: "★★★★★";
+  color: #ffc107;
+}
+
+/* Hide numeric text: "5 out of 5" */
+.star-rating strong,
+.star-rating .rating {
+  display: none;
+}
+
+/* =========================
+   IMAGES - SAME SIZE
+========================= */
+.wcspt-img-link {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wcspt-img-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Support for product-img-wrapper class (if used in HTML) */
+.product-img-wrapper {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* =========================
+   PRODUCT NAME & STARS CENTER
+========================= */
+.post_data {
+  text-align: center;
+  padding-top: 4px;
+}
+
+.post_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.post_header h3 {
+  margin: 8px 0 6px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
